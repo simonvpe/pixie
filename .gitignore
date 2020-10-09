@@ -1,0 +1,7 @@
+# nix
+
+result
+result-*
+.pre-commit-config.yaml
+dist-newstyle/
+.envrc

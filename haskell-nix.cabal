@@ -1,0 +1,9 @@
+cabal-version: >= 1.10
+name: pixie
+version: 0.0.0
+
+executable pixie
+  hs-source-dirs: src
+  main-is: Main.hs
+  default-language: Haskell2010
+  build-depends: base
