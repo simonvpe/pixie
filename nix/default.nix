@@ -22,7 +22,9 @@ in
       ghcid
       haskell.cabal-install
       haskell.fast-tags
+      hlint
       niv
+      ormolu
       pre-commit
     ];
 
