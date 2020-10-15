@@ -19,6 +19,7 @@ executable pixie
     , transformers
 
   other-modules:
+    Env
     Eval
     Infer
     Lexer

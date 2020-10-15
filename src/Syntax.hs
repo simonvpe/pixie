@@ -1,12 +1,12 @@
 module Syntax where
 
-type Var = String
+type Name = String
 
 data Expr
-  = Var Var
+  = Var Name
   | App Expr Expr
-  | Lam Var Expr
-  | Let Var Expr Expr
+  | Lam Name Expr
+  | Let Name Expr Expr
   | Lit Lit
   | If Expr Expr Expr
   | Fix Expr
@@ -21,6 +21,6 @@ data Lit
 data Binop = Add | Sub | Mul | Eql
   deriving (Eq, Ord, Show)
 
-type Decl = (String, Expr)
+data Program = Program [Decl] Expr deriving Eq
 
-data Program = Program [Decl] Expr deriving (Show, Eq)
+type Decl = (String, Expr)

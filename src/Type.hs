@@ -9,13 +9,9 @@ data Type
   | TArr Type Type
   deriving (Show, Eq, Ord)
 
-infixr 9 `TArr`
-
 data Scheme = Forall [TVar] Type
   deriving (Show, Eq, Ord)
 
-typeInt :: Type
-typeInt = TCon "Int"
-
-typeBool :: Type
+typeInt, typeBool :: Type
+typeInt  = TCon "Int"
 typeBool = TCon "Bool"
